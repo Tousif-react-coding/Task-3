@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+</head>
+<style>
+    .box {
+        width: fit-content;
+        height: fit-content;
+
+
+        border: 2px solid black;
+        background-color: rgb(223, 210, 59);
+        align-items: center;
+        /* justify-content: center; */
+        padding: 3px;
+        margin: 2px 3px;
+    }
+
+    .container {
+        display: flex;
+
+        justify-content: center;
+    }
+    .heading{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 class="heading">Convert Me</h1>
+    <div class="container">
+        <div class="box"><i class="fa-solid fa-ruler"></i>Length
+            <p>
+                Enter the value to convert:
+                <input type="number" id="inputValue" />
+            </p>
+            <p>
+                Select the input unit:
+                <select id="inputUnit">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+            </p>
+            <p>
+                Select the output unit:
+                <select id="outputUnit">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+            </p>
+            <button onclick="convert()">Convert</button>
+            <p id="result"></p>
+        </div>
+
+        <div class="box"><i class="fa-solid fa-chart-area"></i>Area
+            <p>
+                Enter the value to convert:
+                <input type="number" id="enterValue" />
+            </p>
+            <p>
+                Select Input Unit:
+                <select id="inputUnit2">
+                    <option value="square meters">Sq Meters</option>
+                    <option value="square millimeters">Sq Millimeters</option>
+                    <option value="square kilometers">Sq kilometers</option>
+                </select>
+            </p>
+            <p>
+                Select Output Unit:
+                <select id="outputUnit2">
+                    <option value="square meters">Sq Meters</option>
+                    <option value="square millimeters">Sq Millimeters</option>
+                    <option value="square kilometers">Sq kilometers</option>
+                </select>
+            </p>
+            <button onclick="convert2()">Convert</button>
+            <p id="result2"></p>
+
+        </div>
+
+        <div class="box"><i class="fa-solid fa-weight-hanging"></i>Weight
+            <p>
+                Enter the value to convert:
+                <input type="number" id="enterValue2" />
+            </p>
+            <p>
+                Select Input Unit:
+                <select id="inPutunit3">
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="pound">Pound</option>
+                    <option value="tone">Tone</option>
+                </select>
+            </p>
+            <p>
+                Select Output Unit:
+                <select id="outPutunit3">
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="pound">Pound</option>
+                    <option value="tone">Tone</option>
+                </select>
+            </p>
+            <button onclick="convert3()">Convert</button>
+            <p id="result3"></p>
+        </div>
+
+        <div class="box"><i class=" fa-solid fa-temperature-three-quarters"></i>Temperature
+            <p>
+                Enter the value to convert:
+                <input type="number" id="enterValue3" />
+            </p>
+            <p>
+                Select the Input Value:
+                <select id="inPutunit4">
+                    <option value=" degcelsius">°Celsius</option>
+                    <option value="degfahrenheit">°Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </p>
+            <p>
+                Select the Output Value:
+                <select id="outPutunit4">
+                    <option value=" degcelsius">°Celsius</option>
+                    <option value="degfahrenheit">°Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </p>
+            <button onclick="convert4()">Convert</button>
+            <p id="result4"></p>
+        </div>
+    </div>
+    <script src="converter.js"></script>
+    <script src="converter2.js"></script>
+    <script src="converter3.js"></script>
+    <script src="converter4.js"></script>
+
+    <script src="https://kit.fontawesome.com/c97ef0e900.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
